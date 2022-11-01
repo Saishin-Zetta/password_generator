@@ -10,7 +10,9 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  background-image: url(./images/Culture_Matrix_Code_corridor.webp);
 }
+
 
 body {
   font-family: sans-serif;
@@ -26,18 +28,25 @@ body {
 header {
   text-align: center;
   padding: 20px;
-  padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  padding-top: 20px;
+  color: goldenrod;
+  text-shadow: 3px 3px black;
+  background-color: darkred;
+  border: 10px solid black;
+  border-radius: 30px;
+  box-shadow: 10px 10px#0e0e0e;
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
-  border-width: 1px;
+  background-color: darkred;
+  border: 10px solid black;
+  border-radius: 30px;
+  border-width: 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: goldenrod;
+  text-shadow: 3px 3px black;
   font-size: 18px;
-  margin: 0 auto;
+  margin: 30px auto;
   max-width: 800px;
   padding: 30px 40px;
 }
@@ -74,13 +83,14 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: goldenrod;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
-  color: hsl(0, 0%, 100%);
+  color: dodgerblue;
+  text-shadow: 2px 1px black;
   display: inline-block;
-  font-size: 22px;
+  font-size: 27px;
   line-height: 22px;
   margin: 16px 16px 16px 20px;
   padding: 14px 34px;
