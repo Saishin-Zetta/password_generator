@@ -10,7 +10,7 @@ function random_int(min, max) {
 }
 
 function get_random_char(list) {
-  return list[random_int(0, list.length - 1)]
+  return list[random_int(0, list.length)] 
 }
 
 function generatePassword() {
@@ -37,7 +37,7 @@ function generatePassword() {
 
   var options_checked = []
 
-  console.log(options_checked)
+
 
   for (var letter = 0; letter < lowercase_list.length; letter++) {
     uppercase_list[letter] = lowercase_list[letter].toUpperCase()
@@ -56,16 +56,18 @@ function generatePassword() {
     options_checked.push(uppercase_list)
   }
 
+  if(options_checked.length === 0) {
+    options_checked.push(lowercase_list)
+  }
+
   var generated_password = ""
 
   for (var char = 0; char < password_length; char++){
     var random_list = get_random_char(options_checked)
     var random_char = get_random_char(random_list)
-    console.log(random_char)
+    generated_password += random_char
   }
-
-
-
+  return generated_password
 }
 
 // Get references to the #generate element (generate button)
@@ -77,7 +79,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button (click event for the button)
